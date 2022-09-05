@@ -32,4 +32,7 @@ public class AController {
         return this.courseService.updateCourse();
     }
 
+    @GetMapping("/getcoursebyid/{id}")
+    public String getCourseId(@PathVariable int id) {return this.courseService.getCourseId(id);}
+
 }

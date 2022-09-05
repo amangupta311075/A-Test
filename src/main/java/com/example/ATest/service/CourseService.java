@@ -8,6 +8,8 @@ public  interface CourseService {
         public List<Course> getCourses();
         public List<Course> updateCourse();
 
+        public String getCourseId(int id);
+
     }
 
 

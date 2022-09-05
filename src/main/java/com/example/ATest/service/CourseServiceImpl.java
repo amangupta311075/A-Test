@@ -29,4 +29,17 @@ public class CourseServiceImpl implements CourseService{
         return null;
     }
 
+    @Override
+    public String getCourseId(int id)
+    {
+        if(id==l1.get(0).getId())
+        {
+            return l1.get(0).getDescription();
+        }
+        else
+        {
+            return null;
+        }
+
+    }
 }
