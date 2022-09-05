@@ -10,6 +10,8 @@ public  interface CourseService {
 
         public String getCourseId(int id);
 
+        public Course addCourse(Course course);
+
     }
 
 

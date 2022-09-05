@@ -42,4 +42,10 @@ public class CourseServiceImpl implements CourseService{
         }
 
     }
+    @Override
+    public Course addCourse(Course course)
+    {
+        l1.add(course);
+        return null;
+    }
 }
