@@ -4,6 +4,8 @@ import com.example.ATest.entity.Course;
 import com.example.ATest.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.*;
 
@@ -24,4 +26,10 @@ public class AController {
     {
         return this.courseService.getCourses();
     }
+    @PatchMapping("/updatecourse")
+    public List<Course> updateCourse()
+    {
+        return this.courseService.updateCourse();
+    }
+
 }

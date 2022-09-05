@@ -23,4 +23,10 @@ public class CourseServiceImpl implements CourseService{
     public List<Course> getCourses() {
         return l1;
     }
+
+    @Override
+    public List<Course> updateCourse() {
+        return null;
+    }
+
 }
